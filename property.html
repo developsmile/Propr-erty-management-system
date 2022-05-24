@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+
+</head>
+
+<body onload="load()">
+    <div class="property-container">
+        <!-- header of management system -->
+        <header>
+            <h2>Property Management System</h2>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464"
+                alt="">
+        </header>
+        <!-- navigation bar -->
+        <nav>
+            <p>All Property</p>
+            <button class="filter-btn"><span class="material-symbols-outlined">sort</span> <span>Filter</span> </button>
+        </nav>
+
+        <!-- property area  -->
+        <section>
+        </section>
+        <p class="copyright">Created by : @kanhaiyalalverma 2022</p>
+
+        <!-- filter box area  -->
+        <div class="filter-box">
+            <p onclick="sortInc()"><span class="material-symbols-outlined">north</span><span>Sort increasing</span></p>
+            <p onclick="sortDec()"><span class="material-symbols-outlined">south</span><span>Sort decreasing</span></p>
+        </div>
+
+
+        <!-- add property button -->
+        <button class="add-btn" onclick="moveBox()">
+            <span class="material-symbols-outlined">
+                add
+            </span>
+        </button>
+    </div>
+    <!-- add property box -->
+    <div class="add-property-box">
+        <h3>Add New Property</h3>
+        <input class="property-name" type="text" value="" placeholder="Name">
+        <input class="property-size" type="number" value="" placeholder="Size">
+        <textarea class="property-desc" name="" id="" cols="" rows="3" placeholder="description......."></textarea>
+        <button onclick="addproperty()">Add</button>
+    </div>
+
+    <!--  -->
+    <script src="index2.js"></script>
+</body>
+
+</html>
