@@ -39,7 +39,12 @@ const appendProperty = (name,size,desc)=>{
 // add data in local storage 
 const addLocaldata = (data)=>{
     let ldata = getLocalData();
-    let data1 = [...ldata,data]
+    let data1;
+    if(ldata!==null){
+       data1 = [...ldata,data];
+    }else{
+        data1 = [data];
+    }
     setLocalData (data1)
 }
 
@@ -126,7 +131,9 @@ const sortDec = async ()=>{
 // from local storage and display in section div
 const load= ()=>{
     let pdata = getLocalData();
-    showProperty(pdata);
+    if(pdata !== null){
+        showProperty(pdata);
+    }
 }
 
 // delete all data from section
