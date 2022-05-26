@@ -9,7 +9,7 @@ login.addEventListener('click',(e)=>{
             password :password.value
         }
         localStorage.setItem('user',JSON.stringify(data));
-        window.location.href = "/media/kanhaiya/New Volume/Propery Management System/property.html"
+        window.location.href = "/property.html"
     }else{
         window.alert("Your password is wrong");
     }
