@@ -9,7 +9,7 @@ login.addEventListener('click',(e)=>{
             password :password.value
         }
         localStorage.setItem('user',JSON.stringify(data));
-        window.location.href = "/property.html"
+        window.location.href = "./property.html"
     }else{
         window.alert("Your password is wrong");
     }
